@@ -1,9 +1,5 @@
-# Node Crypto Examples
+## Basic Cryto Terminology 
 
-7 useful examples of the node crypto module.
-
-- Watch [7 Cryptography Concepts](https://youtu.be/NuyzuNBFWxQ) on YouTube
-- Full [Node Crypto Tutorial](https://fireship.io/lessons/node-crypto-examples/) on Fireship
 
 ## Concepts
 
@@ -15,7 +11,4 @@
 1. Asymmetric Encryption
 1. Signing
 
-## Challenge
-
-Check out the `src/hac# BasicCrypto
-Fireship tutorial on cryptography
+### Learned from FireShip youtube video
