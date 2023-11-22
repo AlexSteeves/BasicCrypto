@@ -1,3 +1,9 @@
+//Encryption
+//Take message ->(scramble bytes)-> cypher Text ->(provide a key for someone to decrypt) -> original message
+
+//Symmetric 
+
+
 const { createCipheriv, randomBytes, createDecipheriv } = require('crypto');
 
 /// Cipher
@@ -19,3 +25,7 @@ const decipher = createDecipheriv('aes256', key, iv);
 const decryptedMessage = decipher.update(encryptedMessage, 'hex', 'utf-8') + decipher.final('utf8');
 
 console.log(`Deciphered: ${decryptedMessage.toString('utf-8')}`);
+
+
+//problem with symmetric encryption, the sender and receiver must share a key
+//
