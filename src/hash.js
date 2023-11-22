@@ -1,20 +1,20 @@
-const { createHash } = require('crypto');
 
-// Create a string hash
-
-function hash(input) {
-    return createHash('sha256').update(input).digest('base64');
-}
-
+//require is Node.JS verison of include
+const {createHash} =require('crypto')
 // Compare two hashed passwords
 
-let password = 'hi-mom!';
+function hash(input){
+    return createHash('sha256').update(input).digest('hex');
+}
+
+
+let password = 'testPass';
 const hash1 = hash(password);
 console.log(hash1)
 
 /// ... some time later
 
-password = 'hi-mom!';
+password = 'testPass';
 const hash2 = hash(password);
 const match = hash1 === hash2;
 
